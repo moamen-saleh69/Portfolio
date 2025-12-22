@@ -1,6 +1,6 @@
 # 📉 Global Tech Layoffs Analysis (2020-2023)
 
-![Dashboard Preview](Dashboards/dashboard_main.png](https://github.com/moamen-saleh69/Portfolio/tree/main/Layoffs/Dashboard)
+![Dashboard Preview](https://github.com/moamen-saleh69/Portfolio/tree/main/Layoffs/Dashboard)
 
 ## 📊 Live Dashboard
 ### [👉 Click Here to View Interactive Dashboard](https://public.tableau.com/app/profile/moamen.saleh/viz/LayoffsVisual/Lay_Offs_General#1)
