@@ -35,6 +35,6 @@ This project analyzes sales, profit margins, and return rates across different U
 
 ### 💡 Recommendations
 Based on the data, the company should:
-1.  Investigate the logistics partners in the **East Region** to reduce shipping times.
+1.  Investigate the logistics partners in the **East, South, West Regions** to reduce shipping times.
 2.  Implement a stricter return policy or quality check for the East region distribution centers.
-3.  Replicate the **North Region's** shipping model across other territories.
+3.  Replicate the **North Region's** shipping model across other territories to reduce shiping time and damaging risk.
