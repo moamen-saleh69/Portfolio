@@ -27,9 +27,9 @@ This project analyzes sales, profit margins, and return rates across different U
 ---
 
 ### 📂 Project Structure
-* `/SQL_Scripts`: Contains the queries used for data cleaning and analysis.
+* `/SQL`: Contains the queries used for data cleaning and analysis.
 * `/Dashboard`: Screenshots of the final visualizations.
-* `Final_Data.xlsx`: The processed dataset used for the Tableau dashboard.
+* `/Clean_Commerce_Tables.xlsx`: The processed dataset used for the Tableau dashboard.
 
 ---
 
