@@ -25,51 +25,39 @@ The raw data contained nested JSON-like strings (e.g., `'Action;Indie;Adventure'
 * **`CASE WHEN` Logic**: To categorize messy genre tags into clean buckets (e.g., grouping "Roguelike" and "JRPG" under "RPG").
 * **Window Functions (`RANK()` over Partition)**: To identify the top sub-categories within each main genre.
 
-```sql
--- Example of the Logic used to rank Categories within Genres
-SELECT
-    genres,
-    Clean_Category,
-    COUNT(*) as Frequency,
-    RANK() OVER (PARTITION BY genres ORDER BY COUNT(*) DESC) as Rank_Num
-FROM Unpacked_Steam_Data
-GROUP BY genres, Clean_Category
+---
 
+## 📊 The Dashboard (Power BI)
+The visual layer was designed to mimic the **Steam Store UI** (Dark Mode) rather than a corporate report.
 
-📊 The Dashboard (Power BI)
-The visual layer was designed to mimic the Steam Store UI (Dark Mode) rather than a corporate report.
+### 1. The "Galaxy" Chart (Value Analysis)
+* **Visual:** Scatter Plot (Playtime vs. Price).
+* **Insight:** The chart reveals a "Power Law" distribution.
+    * **The Tower (Left):** Low-cost Indie games often provide hundreds of hours of playtime (High ROI).
+    * **The Tail (Right):** AAA titles ($60+) show diminishing returns on playtime per dollar.
 
-1. The "Galaxy" Chart (Value Analysis)
-Visual: Scatter Plot (Playtime vs. Price).
+### 2. Interactive Filtering
+* **Genre Slicer:** Filters the entire dashboard by game type.
+* **Price & Year Sliders:** Allows users to simulate specific buying scenarios (e.g., "Games under $10 released after 2015").
 
-Insight: The chart reveals a "Power Law" distribution.
+### 3. Deep Dive Matrices
+* **Developer Leaderboard:** Ranks studios by total positive ratings.
+* **Category Drill-Down:** Reveals what players actually want in a genre (e.g., "Single-player" is the #1 requested feature even in Action games).
 
-The Tower (Left): Low-cost Indie games often provide hundreds of hours of playtime (High ROI).
+---
 
-The Tail (Right): AAA titles ($60+) show diminishing returns on playtime per dollar.
+## 🚀 Key Insights
+1.  **Indie Supremacy:** Mathematically, Indie games offer a better "Hours per Dollar" ratio than AAA games.
+2.  **Single-Player Demand:** Despite the multiplayer trend, "Single-Player" remains the most tagged category across major genres.
+3.  **Pricing Sweet Spot:** The highest concentration of positive reviews exists in the **$10 - $20** price range.
 
-2. Interactive Filtering
-Genre Slicer: Filters the entire dashboard by game type.
+---
 
-Price & Year Sliders: Allows users to simulate specific buying scenarios (e.g., "Games under $10 released after 2015").
+## 📂 Repository Structure
+* `📁 /SQL` - The raw cleaning and ranking queries.
+* `📁 /Dashboard` - The `.pbix` file with the visual model.
+* `📁 /Screenshots` - High-res images of the dashboard.
 
-3. Deep Dive Matrices
-Developer Leaderboard: Ranks studios by total positive ratings.
+---
 
-Category Drill-Down: Reveals what players actually want in a genre (e.g., "Single-player" is the #1 requested feature even in Action games).
-
-🚀 Key Insights
-Indie Supremacy: Mathematically, Indie games offer a better "Hours per Dollar" ratio than AAA games.
-
-Single-Player Demand: Despite the multiplayer trend, "Single-Player" remains the most tagged category across major genres.
-
-Pricing Sweet Spot: The highest concentration of positive reviews exists in the $10 - $20 price range.
-
-📂 Repository Structure
-📁 /SQL - The raw cleaning and ranking queries.
-
-📁 /Dashboard - The .pbix file with the visual model.
-
-📁 /Screenshots - High-res images of the dashboard.
-
-Created by Moamen Saleh
+*Created by [Moamen Saleh]*
