@@ -5,8 +5,7 @@ A full-stack data analysis project exploring the Steam Game Store economy. This 
 
 The project moves from raw data processing in **SQL Server** (cleaning, normalization, ranking) to a fully interactive, custom-designed dashboard in **Power BI**.
 
-![Dashboard Screenshot](<img width="1920" height="1080" alt="STEAM1" src="https://github.com/user-attachments/assets/99dd0634-d108-4e4a-96d8-853c93129a37" />
- )
+![Steam Dashboard](https://github.com/user-attachments/assets/99dd0634-d108-4e4a-96d8-853c93129a37)
 ---
 
 ## 🛠️ Tech Stack
