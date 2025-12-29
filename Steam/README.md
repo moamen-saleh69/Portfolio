@@ -33,6 +33,8 @@ SELECT
     RANK() OVER (PARTITION BY genres ORDER BY COUNT(*) DESC) as Rank_Num
 FROM Unpacked_Steam_Data
 GROUP BY genres, Clean_Category
+;
+
 ---
 
 ## 📊 The Dashboard (Power BI)
@@ -68,4 +70,4 @@ The visual layer was designed to mimic the **Steam Store UI** (Dark Mode) rather
 
 ---
 
-*Created by [Your Name]*
+*Created by [Moamen saleh]*
