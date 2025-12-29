@@ -8,7 +8,8 @@ This project analyzes sales, profit margins, and return rates across different U
 ---
 
 ### 📸 Dashboard Preview
-![Dashboard Screenshot](https://github.com/moamen-saleh69/Portfolio/tree/main/E-commerce/Dashboard)
+![Dashboard Screenshot]("https://github.com/user-attachments/assets/ee1c1d6d-2ccb-4099-b1fb-0bfdfc24b75d" />
+)
 
 ---
 
